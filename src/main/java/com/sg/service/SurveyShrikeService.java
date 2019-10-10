@@ -18,5 +18,9 @@ public interface SurveyShrikeService {
 	public Integer getNumberOfEnrollmentsInAForm(String formId);
 	
 	public void deleteForm(String formId);
+	
+	public Form createForm(Form form);
+	
+	public Integer displayForm(Form form);
 
 }
