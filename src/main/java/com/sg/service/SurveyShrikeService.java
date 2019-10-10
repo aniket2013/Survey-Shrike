@@ -2,35 +2,21 @@ package com.sg.service;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 
-import com.sg.dao.SurveyShrikeDao;
 import com.sg.model.Form;
 
+@Repository
+public interface SurveyShrikeService {
 
-public class SurveyShrikeService {
+	public List<Form> getAllForms();
 
-	@Autowired
-	SurveyShrikeDao surveyShrikeDao;
+	public Form getFormById(String formId);
 
-	public List<Form> getAllForms() {
-		List<Form> forms = surveyShrikeDao.getAllForms();
-		return forms;
-	}
+	public Form saveForm(Form form);
 
-	public Form getFormById(String id) {
-		Form form = surveyShrikeDao.getFormById(id);
-		return form;
-	}
+	public Integer getNumberOfEnrollmentsInAForm(String formId);
+	
+	public void deleteForm(String formId);
 
-	public Form saveForm(Form form) {
-		Form formSaved=surveyShrikeDao.saveForm(form);
-		return form;
-	}
-
-	public Integer getNumberOfEnrollmentsInAForm(String id) {
-		Integer enrollments = surveyShrikeDao.getNumberOfEnrollmentsInAForm(id);
-		return enrollments;
-	}
 }

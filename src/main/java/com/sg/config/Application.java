@@ -3,7 +3,6 @@ package com.sg.config;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import org.springframework.context.annotation.ComponentScan;
 
 //This is a convenience annotation that is equivalent to 
