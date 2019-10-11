@@ -16,6 +16,12 @@ public class Button {
 		this.buttonId = buttonId;
 		this.buttonType = buttonType;
 	}
+    
+	public Button(String formId, String buttonId) {
+		super();
+		this.formId = formId;
+		this.buttonId = buttonId;
+	}
 
 	public String getFormId() {
 		return formId;

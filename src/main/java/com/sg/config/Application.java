@@ -5,8 +5,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-//This is a convenience annotation that is equivalent to 
-//declaring @Configuration, @EnableAutoConfiguration and @ComponentScan.
+
 @ComponentScan(basePackages = "com.sg")
 @SpringBootApplication
 @EnableAutoConfiguration

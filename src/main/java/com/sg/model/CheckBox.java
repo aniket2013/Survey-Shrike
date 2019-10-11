@@ -1,10 +1,13 @@
 package com.sg.model;
 
+import java.util.List;
+
 public class CheckBox {
 
 	String formId;
 	String checkBoxId;
 	String checkBoxValue;
+	List<String> optionValues;
 
 	public CheckBox() {
 		super();
@@ -15,6 +18,16 @@ public class CheckBox {
 		this.formId = formId;
 		this.checkBoxId = checkBoxId;
 		this.checkBoxValue = checkBoxValue;
+	}
+	
+
+	public CheckBox(String formId, String checkBoxId, String checkBoxValue,
+			List<String> optionValues) {
+		super();
+		this.formId = formId;
+		this.checkBoxId = checkBoxId;
+		this.checkBoxValue = checkBoxValue;
+		this.optionValues = optionValues;
 	}
 
 	public String getFormId() {
@@ -40,5 +53,14 @@ public class CheckBox {
 	public void setCheckBoxValue(String checkBoxValue) {
 		this.checkBoxValue = checkBoxValue;
 	}
+
+	public List<String> getOptionValues() {
+		return optionValues;
+	}
+
+	public void setOptionValues(List<String> optionValues) {
+		this.optionValues = optionValues;
+	}
+	
 
 }

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.sg.Dtos.FormDto;
 import com.sg.model.Form;
 import com.sg.service.SurveyShrikeService;
 
@@ -41,6 +42,16 @@ public class DashboardController {
 	@RequestMapping(value = "/form/enrollments/formId", method = RequestMethod.GET)
 	public Integer getNumberOfEnrollmentsByFormId(@RequestParam String id) {
 		return surveyShrikeService.getNumberOfEnrollmentsInAForm(id);
+	}
+	
+	@RequestMapping(value = "/form/displayForm", method = RequestMethod.GET)
+	public FormDto displayFormById(@RequestParam String id){
+		return surveyShrikeService.displayFormById(id);
+	}
+	
+	@RequestMapping(value = "/form/displayAllForms", method = RequestMethod.GET)
+	public List<FormDto> displayAllForms(){
+		return surveyShrikeService.displayAllForms();
 	}
 
 }
