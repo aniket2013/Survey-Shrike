@@ -9,6 +9,7 @@ public class MetaData {
 	List<DropDown> dropDowns;
 	List<CheckBox> checkboxes;
 	List<Button> butons;
+	List<TextArea> textAreas;
 
 	public MetaData() {
 		super();
@@ -64,5 +65,14 @@ public class MetaData {
 	public void setButons(List<Button> butons) {
 		this.butons = butons;
 	}
+
+	public List<TextArea> getTextArea() {
+		return textAreas;
+	}
+
+	public void setTextArea(List<TextArea> textArea) {
+		this.textAreas = textArea;
+	}
+	
 
 }

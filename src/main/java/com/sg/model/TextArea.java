@@ -32,6 +32,11 @@ public class TextArea {
 	public void setPlaceholderValue(String placeholderValue) {
 		this.placeholderValue = placeholderValue;
 	}
+	@Override
+	public String toString() {
+		return "TextArea [formId=" + formId + ", textAreaId=" + textAreaId
+				+ ", placeholderValue=" + placeholderValue + "]";
+	}
 	
 	
 

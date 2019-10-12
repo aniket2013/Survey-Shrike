@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.sg.Dtos.FormDto;
+import com.sg.Dtos.FormView;
 import com.sg.model.Form;
 
 @Repository
@@ -24,8 +24,10 @@ public interface SurveyShrikeService {
 	
 	public Integer displayForm(Form form);
 	
-	public FormDto displayFormById(String formId);
+	public FormView displayFormByName(String formId);
 	
-	public List<FormDto> displayAllForms();
+	public List<FormView> displayAllForms();
+	
+	public FormView saveFormDto(String url);
 
 }

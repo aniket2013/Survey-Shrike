@@ -9,10 +9,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.sg.Dtos.FormDto;
+import com.sg.Dtos.FormView;
 import com.sg.model.Form;
 import com.sg.service.SurveyShrikeService;
-
 
 @RestController
 public class DashboardController {
@@ -35,7 +34,6 @@ public class DashboardController {
 
 	@RequestMapping(value = "/form/formId", method = RequestMethod.GET)
 	public Form getFormById(@RequestParam String id) {
-		// http://localhost:8080/form/formId?id=F01
 		return surveyShrikeService.getFormById(id);
 	}
 
@@ -43,15 +41,20 @@ public class DashboardController {
 	public Integer getNumberOfEnrollmentsByFormId(@RequestParam String id) {
 		return surveyShrikeService.getNumberOfEnrollmentsInAForm(id);
 	}
-	
+
 	@RequestMapping(value = "/form/displayForm", method = RequestMethod.GET)
-	public FormDto displayFormById(@RequestParam String id){
-		return surveyShrikeService.displayFormById(id);
+	public FormView displayFormById(@RequestParam String id) {
+		return surveyShrikeService.displayFormByName(id);
 	}
-	
+
 	@RequestMapping(value = "/form/displayAllForms", method = RequestMethod.GET)
-	public List<FormDto> displayAllForms(){
+	public List<FormView> displayAllForms() {
 		return surveyShrikeService.displayAllForms();
+	}
+
+	@RequestMapping(value = "/form/saveForm", method = RequestMethod.GET)
+	public FormView saveForm(@RequestParam String url) {
+		return surveyShrikeService.saveFormDto(url);
 	}
 
 }

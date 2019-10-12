@@ -17,6 +17,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
+import com.sg.Dtos.FormView;
 import com.sg.config.Application;
 import com.sg.model.Form;
 import com.sg.service.SurveyShrikeService;
@@ -77,4 +78,67 @@ public class SurveyShrikeControllerTest {
 		
 		
 	}
+	
+	@Test
+	public void should_get_correct_status_for_displaying_all_forms() throws Exception{
+		
+		FormView form1 = new FormView();
+		FormView form2 = new FormView();
+		List<FormView> forms = new ArrayList<FormView>();
+		forms.add(form1);
+		forms.add(form2);
+		Mockito.when(
+				surveyShrikeService.displayAllForms()).thenReturn(forms);
+		
+		mvc.perform(
+				MockMvcRequestBuilders.get("/form/displayAllForms")
+				.accept(MediaType.APPLICATION_JSON))
+				.andExpect(status().isOk());
+		
+		
+	}
+	
+	
+	@Test
+	public void should_get_correct_status_for_displaying_from_by_name() throws Exception{
+		
+		FormView form1 = new FormView();
+		form1.setFormName("Form1");
+		
+		
+		Mockito.when(
+				surveyShrikeService.displayFormByName(form1.getFormName())).thenReturn(form1);
+		
+		mvc.perform(
+				MockMvcRequestBuilders.get("/form/displayForm?id=Form1")
+				.accept(MediaType.APPLICATION_JSON))
+				.andExpect(status().isOk());
+		
+		
+	}
+	
+	
+	@Test
+	public void should_get_correct_correct_satus_to_save_created_form() throws Exception{
+		
+		FormView form1 = new FormView();
+		form1.setFormName("Form1");
+		
+		
+		Mockito.when(
+				surveyShrikeService.saveFormDto(Mockito.anyString())).thenReturn(form1);
+		
+		mvc.perform(
+				MockMvcRequestBuilders.get("/form/saveForm?url=Name")
+				.accept(MediaType.APPLICATION_JSON))
+				.andExpect(status().isOk());
+		
+		
+	}
+	
+	
+	
+	
+	
+	
 }

@@ -41,4 +41,11 @@ public class TextBox {
 		this.placeholderValue = placeholderValue;
 	}
 
+	@Override
+	public String toString() {
+		return "TextBox [formId=" + formId + ", textBoxId=" + textBoxId
+				+ ", placeholderValue=" + placeholderValue + "]";
+	}
+	
+
 }

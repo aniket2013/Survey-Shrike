@@ -8,7 +8,7 @@ import com.sg.model.DropDown;
 import com.sg.model.TextArea;
 import com.sg.model.TextBox;
 
-public class FormDto {
+public class FormView {
 
 	String formId;
 	String formName;
@@ -18,7 +18,7 @@ public class FormDto {
 	List<CheckBox> checkBoxes;
 	List<DropDown> dropdDowns;
 
-	public FormDto(String formId, String formName, List<TextBox> textboxes,
+	public FormView(String formId, String formName, List<TextBox> textboxes,
 			List<Button> buttons, List<CheckBox> checkBoxes) {
 		super();
 		this.formId = formId;
@@ -29,7 +29,7 @@ public class FormDto {
 	}
 
 	
-	public FormDto(String formId, String formName, List<TextBox> textboxes,
+	public FormView(String formId, String formName, List<TextBox> textboxes,
 			List<TextArea> textAreas, List<Button> buttons,
 			List<CheckBox> checkBoxes) {
 		super();
@@ -42,7 +42,7 @@ public class FormDto {
 	}
 
 
-	public FormDto() {
+	public FormView() {
 		super();
 	}
 
@@ -102,6 +102,15 @@ public class FormDto {
 
 	public void setDropdDowns(List<DropDown> dropdDowns) {
 		this.dropdDowns = dropdDowns;
+	}
+
+
+	@Override
+	public String toString() {
+		return "FormDto [formId=" + formId + ", formName=" + formName
+				+ ", textboxes=" + textboxes + ", textAreas=" + textAreas
+				+ ", buttons=" + buttons + ", checkBoxes=" + checkBoxes
+				+ ", dropdDowns=" + dropdDowns + "]";
 	}
 	
 

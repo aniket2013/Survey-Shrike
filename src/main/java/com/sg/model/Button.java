@@ -47,4 +47,11 @@ public class Button {
 		this.buttonType = buttonType;
 	}
 
+	@Override
+	public String toString() {
+		return "Button [formId=" + formId + ", buttonId=" + buttonId
+				+ ", buttonType=" + buttonType + "]";
+	}
+
+	
 }
