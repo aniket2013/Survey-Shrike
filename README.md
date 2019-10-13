@@ -115,3 +115,14 @@ This end point saves or updates the survey form based on the form Id.
 
 #  Swagger Reports
 ![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/MicroServices.JPG)
+
+
+
+#  Swagger Reports
+![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/MicroServices.JPG)
+
+#  Contacts
+xyz@hotmail.com
+Follow 
+      Twitter :  @dumbBoy
+      GitHub : aniket2013
