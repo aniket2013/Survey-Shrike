@@ -17,7 +17,7 @@ Survey-Shrike is a web application that allows users to create any sort of surve
    - Jaro Winkler Algorithm
    - Levenshtein Algorithm
    - Dice Coefficient Strategy Algortihm
-   Further it also provides a faciltiy to show different statistics regarding the survey forms.
+ Further it also provides a faciltiy to show different statistics regarding the survey forms.
 
 4. Comes with a simple but reusable memeory architecture that can easily be extended to most of the problem statements pertaining to this domain.
 5. Secured using the Spring Security that has a pretty elaborte mechanism to provide authorization and authentication for the usage of the application.
