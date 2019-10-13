@@ -112,3 +112,6 @@ This end point saves or updates the survey form based on the form Id.
 ![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/jpgs/CreateForm.JPG)
  ![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/jpgs/CreateEntries.JPG)
 
+
+#  Swagger Reports
+![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/MicroServices.JPG)
