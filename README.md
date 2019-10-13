@@ -95,3 +95,34 @@ This end point saves or updates the survey form based on the form Id.
 ![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/BDDReport.JPG)
 
 ![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/BDDReport1.JPG)
+
+
+#  Steps To Use
+1. **Log In to The Application**- It is spring security enabled so would need to be auhorized and then authenticated to access the apllication.
+![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/jpgs/Login.JPG)
+
+2.**Dashboard screen would be displayed** - This screen contains the names of the forms in the database and gives you option to view a form by entering the name and creating a form.
+![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/jpgs/DashBoard.JPG)
+
+3.**Action to view an existing form**- Enter the name of the form to see and click on display you will be able to view the form.
+![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/jpgs/DisplayForm1.JPG)
+![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/jpgs/DisplayForm2.JPG)
+
+4. **Action to create a new form** -  Click on the button to create a new form then options to add various entries will open up add them , enter your questions and save the form- simple and easy.
+![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/jpgs/CreateForm.JPG)
+ ![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/jpgs/CreateEntries.JPG)
+
+
+#  Swagger Reports
+![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/MicroServices.JPG)
+
+
+
+#  Swagger Reports
+![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/MicroServices.JPG)
+
+#  Contacts
+xyz@hotmail.com
+Follow 
+      Twitter :  @dumbBoy
+      GitHub : aniket2013
