@@ -51,3 +51,47 @@ Following are the three main components:
 ##  OverAll Design
 ![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/OverallDesign.JPG)
 
+
+#  Micro Service End Points    
+1.
+
+     @RequestMapping(value = "/dashboard", method = RequestMethod.GET)
+    	@ApiOperation(value = "Show the HTML rendered",
+    notes = "Fetches the client side entities rendered to show the dashboard")
+ This end point will render the dashboard where all operations can be performed and the survey forms are displayed.
+
+2.`
+
+    @ApiOperation(value = "Get all the forms",
+    		    notes = "Fecthes the json contents of all the forms")
+    	@RequestMapping(value = "/forms", method = RequestMethod.GET)
+
+This end point will fetch the  data for all the forms that are present in the database. On the client side you would only see the names of the survey forms.
+
+3. `
+
+    @ApiOperation(value = "Get the form by form Id",notes = "Fecthes the json data of the form by Id passed")
+    	@RequestMapping(value = "/form/formId", method = RequestMethod.GET)`@RequestParam String Id
+
+This end point would fetch the data of a survey form by the formId.
+
+4.`
+
+    @ApiOperation(value = "Get the number of enrollements in a form",notes = "Number of enrollemts for a form based on the formId passed")
+    	@RequestMapping(value = "/form/enrollments/formId", method = RequestMethod.GET)`@RequestParam String Id
+
+This end point fetches the number of enrollments to a survey form base don their form Iid.
+5. `@RequestMapping(value = "/form/saveForm", method = RequestMethod.POST)` @RequestParam String Id`
+This end point saves or updates the survey form based on the form Id.
+
+#  Quality Reports
+## Test Driven Development-JUnit reports
+![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/TDDReports/ControllerTest.JPG)   
+
+![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/TDDReports/ServiceTest.JPG)
+
+  
+## Behavioural Driven Development-Cucumber Reports
+![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/BDDReport.JPG)
+
+![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/BDDReport1.JPG)
