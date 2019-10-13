@@ -40,14 +40,14 @@ Following are the three main components:
 
 ## Database architecture
 
-![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/DatabaseArchitecture.JPG)(https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/DatabaseArchitecture.JPG)
+![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/DatabaseArchitecture.JPG)
 
 ##  Spring Security
-[https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/Security.JPG](https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/Security.JPG)
+![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/Security.JPG)
 
 ##  Micro Services
-[https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/MicroServices.JPG](https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/MicroServices.JPG)
+![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/MicroServices.JPG)
 
 ##  OverAll Design
-[https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/OverallDesign.JPG](https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/OverallDesign.JPG)
+![alt text](https://github.com/aniket2013/Survey-Shrike/blob/master/TechnicalDesigns/OverallDesign.JPG)
 
