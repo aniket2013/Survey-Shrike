@@ -55,7 +55,7 @@ Following are the three main components:
 #  Micro Service End Points    
 1.
 
-     @RequestMapping(value = "/dashboard", method = RequestMethod.GET)
+     @RequestMapping(value = "/dashboards", method = RequestMethod.GET)
     	@ApiOperation(value = "Show the HTML rendered",
     notes = "Fetches the client side entities rendered to show the dashboard")
  This end point will render the dashboard where all operations can be performed and the survey forms are displayed.
@@ -71,7 +71,7 @@ This end point will fetch the  data for all the forms that are present in the da
 3. `
 
     @ApiOperation(value = "Get the form by form Id",notes = "Fecthes the json data of the form by Id passed")
-    	@RequestMapping(value = "/form/formId", method = RequestMethod.GET)`@RequestParam String Id
+    	@RequestMapping(value = "/forms/formId", method = RequestMethod.GET)`@RequestParam String Id
 
 This end point would fetch the data of a survey form by the formId.
 
@@ -81,7 +81,7 @@ This end point would fetch the data of a survey form by the formId.
     	@RequestMapping(value = "/form/enrollments/formId", method = RequestMethod.GET)`@RequestParam String Id
 
 This end point fetches the number of enrollments to a survey form base don their form Iid.
-5. `@RequestMapping(value = "/form/saveForm", method = RequestMethod.POST)` @RequestParam String Id`
+5. `@RequestMapping(value = "/forms/saveForm", method = RequestMethod.POST)` @RequestParam String Id`
 This end point saves or updates the survey form based on the form Id.
 
 #  Quality Reports
